@@ -1,0 +1,151 @@
+@font-face {
+    font-family: Kanit;
+    src: url(font/Kanit-Regular.woff);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Kanit;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > .calculater-container > .calculator {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(233, 233, 233);
+}
+.container > .calculater-container > .calculator > .calculator-display {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > .calculater-container > .calculator > .calculator-display > .display {
+    background-color: white;
+    width: 90%;
+    height: 80px;
+    text-align: end;
+}
+.container > .calculater-container > .calculator > 
+.calculator-display > .display > .number-state {
+    height: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+.container > .calculater-container > .calculator > 
+.calculator-display > .display > .number-current { 
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    font-size: 40px;
+}
+.container > .calculater-container > .calculator > .calculator-button-container {
+    display: flex;
+    justify-content: center;
+}
+.container > .calculater-container > .calculator > .calculator-button-container > .calculator-button {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:    "7 8 9 add"
+                            "4 5 6 subtract"
+                            "1 2 3 multiply"
+                            "c 0 d divide"
+                            "equal equal equal dot";
+}
+.container > .calculater-container > .calculator > .calculator-button-container > .calculator-button > button {
+    height: 50px;
+    font-size: 20px;
+}
+#Add {
+    grid-area: add;
+
+}
+#Subtract {
+    grid-area: subtract;
+
+}
+#Multiply {
+    grid-area: multiply;
+
+}
+#Divide {
+    grid-area: divide;
+    
+}
+#Equal {
+    grid-area: equal;
+    border: none;
+    background-color: turquoise;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+}
+#Dot {
+    grid-area: dot;
+    background-color: rgb(28, 93, 158);
+    border: none;
+    color: white;
+    font-size: 30px;
+    transition: .3s;
+    cursor: pointer;
+}
+#Dot:hover {
+    background-color: rgb(14, 53, 92);
+}
+#Add , #Subtract , #Multiply , #Divide {
+    background-color: rgb(70, 156, 243);
+    border: none;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+#Add:hover {
+    background-color: rgb(31, 118, 206);
+}
+#Subtract:hover {
+    background-color: rgb(31, 118, 206);
+}
+#Multiply:hover {
+    background-color: rgb(31, 118, 206);
+}
+#Divide:hover {
+    background-color: rgb(31, 118, 206);
+}
+#Equal:hover {
+    background-color: rgb(53, 173, 161);
+}
+.number {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.number:hover {
+    background-color: rgb(233, 233, 233);
+}
+.function {
+    background-color: rgb(253, 180, 63);
+    border: none;
+    font-weight: bold;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+.function:hover {
+    background-color: rgb(190, 135, 46);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculater-container">
+            <div class="calculator">
+                <div class="calculator-display">
+                    <div class="display">
+                        <p class="number-state">0</p>
+                        <p class="number-current">0</p>
+                    </div>
+                </div>
+                <div class="calculator-button-container">
+                    <div class="calculator-button">
+                        <button onclick="PushOperator('+')" id="Add" class="operator-btn">+</button>
+                        <button onclick="PushNumber(7)" id="7" class="number">7</button>
+                        <button onclick="PushNumber(8)" id="8" class="number">8</button>
+                        <button onclick="PushNumber(9)" id="9" class="number">9</button>
+                        <button onclick="PushOperator('-')" id="Subtract" class="operator-btn">-</button>
+                        <button onclick="PushNumber(4)" id="4" class="number">4</button>
+                        <button onclick="PushNumber(5)" id="5" class="number">5</button>
+                        <button onclick="PushNumber(6)" id="6" class="number">6</button>
+                        <button onclick="PushOperator('*')" id="Multiply" class="operator-btn">x</button>
+                        <button onclick="PushNumber(1)" id="1" class="number">1</button>
+                        <button onclick="PushNumber(2)" id="2" class="number">2</button>
+                        <button onclick="PushNumber(3)" id="3" class="number">3</button>
+                        <button onclick="ClearCurrent()" id="C" class="function">C</button>
+                        <button onclick="PushNumber(0)" id="0" class="number">0</button>
+                        <button onclick="DelNumber()" id="D" class="function">D</button>
+                        <button onclick="PushOperator('/')" id="Divide" class="operator-btn">/</button>
+                        <button onclick="Equal()" id="Equal">=</button>
+                        <button onclick="PushDot()" id="Dot">.</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Index.js"></script>
+</body>
+</html>
